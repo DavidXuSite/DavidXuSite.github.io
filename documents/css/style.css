@@ -343,7 +343,15 @@ body {
 
 .photo-main-frame img,
 .photo-pair-frame img {
-  border: 5px solid red !important;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.12),
+    0 16px 32px rgba(0,0,0,0.20);
 }
 
 .photo-caption {
@@ -408,7 +416,3 @@ a.lien {
 }
 
 a.lien:hover { color: yellow; }
-
-body {
-  background: yellow !important;
-}
