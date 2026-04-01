@@ -408,3 +408,7 @@ a.lien {
 }
 
 a.lien:hover { color: yellow; }
+
+body {
+  background: yellow !important;
+}
