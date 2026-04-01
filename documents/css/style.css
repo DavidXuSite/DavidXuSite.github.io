@@ -277,10 +277,16 @@ body {
   }
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
  /* 2 colonnes pour contact */
 .column {
-  float: left;
   width: 50%;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
  /* Mettre une ligne à droite de la colonne */
@@ -289,27 +295,25 @@ body {
 }
 
 /* Clear floats after the columns */
-.row:after {
+/*.row:after {
   content: "";
   display: table;
   clear: both;
 }
-
+*/
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 670px) {
   .column {
     width: 100%;
   }
+
+  .column.border-right {
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
 }
 
-@media screen and (max-width: 670px) {
-	.column.border-right {
-  		border-right: 2px solid transparent;
-    	border-bottom: 2px solid black;
-  	}
-}
-
-.photo_concert_left {
+/*.photo_concert_left {
   float: left;
   width: 35%;
   text-align: center;
@@ -324,11 +328,47 @@ body {
 }
 
 .photo_concert img {
-  height: 387;
+  height: 387px;
 }
 
 .photo_concert p {
   text-align: center;
+}
+*/
+
+.photo_concert {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.photo_concert_left {
+  flex: 0 0 35%;
+  text-align: center;
+}
+
+.photo_concert_right {
+  flex: 0 0 65%;
+  text-align: center;
+}
+
+.photo_concert img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 670px) {
+  .photo_concert {
+    flex-direction: column;
+  }
+
+  .photo_concert_left,
+  .photo_concert_right {
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }
 
 audio {
