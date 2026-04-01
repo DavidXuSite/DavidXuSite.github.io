@@ -313,29 +313,6 @@ body {
   }
 }
 
-/*.photo_concert_left {
-  float: left;
-  width: 35%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.photo_concert_right {
-  float: right;
-  width: 65%;
-  text-align: center; 
-}
-
-.photo_concert img {
-  height: 387px;
-}
-
-.photo_concert p {
-  text-align: center;
-}
-*/
-
 .photo-feature {
   max-width: 1250px;
   margin: 0 auto;
@@ -366,15 +343,7 @@ body {
 
 .photo-main-frame img,
 .photo-pair-frame img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow:
-    0 4px 10px rgba(0,0,0,0.12),
-    0 16px 32px rgba(0,0,0,0.20);
+  border: 5px solid red !important;
 }
 
 .photo-caption {
