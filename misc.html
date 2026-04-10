@@ -30,13 +30,17 @@
 		
 		<script>
 			function myFunction() {
-  			var x = document.getElementById("myNavbar");
-  			if (x.className === "navbar") {
-    			x.className += " responsive";
-  			} else {
-    			x.className = "navbar";
+    			var x = document.getElementById("myNavbar");
+    			var icon = x.querySelector(".icon i");
+
+    			if (x.className === "navbar") {
+      			x.className += " responsive";
+      			icon.className = "fa fa-times";
+    			} else {
+      			x.className = "navbar";
+      			icon.className = "fa fa-bars";
+    			}
   			}
-			}
 		</script>
 	</header>
 
@@ -51,59 +55,57 @@
    	<h2 align=center>Some friends</h2>
    	
    	<p>Here are the webpages of friends from my time in Seoul.</p>
-   	
-   	<h3 class="page-perso"><a href="https://alexis-marchand.github.io/">Alexis Marchand</a></h3>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/cf-nb/">Carl-Fredrik Nyberg Brodda</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/cf-nb/">Carl-Fredrik Nyberg Brodda</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/rogozinnikov">Eugen Rogozinnikov</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/rogozinnikov">Eugen Rogozinnikov</a>
   		
-  		<h3 class="page-perso"><a href="https://inhyeokchoi48.github.io/">Inhyeok Choi</a></h3>
+  		<a class="page-perso" href="https://inhyeokchoi48.github.io/">Inhyeok Choi</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/khanhqle">Khánh Lê</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/khanhqle">Khánh Lê</a>
   		
-  		<h3 class="page-perso"><a href="https://kyeongrokim.github.io/">KyeongRo Kim</a></h3>
+  		<a class="page-perso" href="https://kyeongrokim.github.io/">KyeongRo Kim</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/nadav-gropper/">Nadav Gropper</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/nadav-gropper/">Nadav Gropper</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/seunghoonhwang">Seunghoon Hwang</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/seunghoonhwang">Seunghoon Hwang</a>
   		
-  		<h3 class="page-perso"><a href="https://sylvaincarpentier.github.io/">Sylvain Carpentier</a></h3>
+  		<a class="page-perso" href="https://sylvaincarpentier.github.io/">Sylvain Carpentier</a>
    	
    	<p>Here are the personal webpages of some friends that I met during my Ph.D.</p>
   	
-		<h3 class="page-perso"><a href="https://bflechelles.pages.math.cnrs.fr/">Balthazar Fléchelles</a></h3>
+		<a class="page-perso" href="https://bflechelles.pages.math.cnrs.fr/">Balthazar Fléchelles</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/franden/home-page">Francesco Denisi</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/franden/home-page">Francesco Denisi</a>
   		
-  		<h3 class="page-perso"><a href="https://site-9768384-3510-4689.mystrikingly.com/">Gonzalo Ruiz Stolowicz</a></h3>
+  		<a class="page-perso" href="https://site-9768384-3510-4689.mystrikingly.com/">Gonzalo Ruiz Stolowicz</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/mihaipavel/home">Mihai Pavel</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/mihaipavel/home">Mihai Pavel</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.math.u-pem.fr/long.yusen/">Yusen Long</a></h3>
+  		<a class="page-perso" href="https://perso.math.u-pem.fr/long.yusen/">Yusen Long</a>
   		
   		<p>And here are the webpages of friends I’ve had the pleasure to meet during my studies in Rennes.<br>
   		In some of these, you may find some things on mathematical outreach, or resources, pieces of advice and tips about the <em>agrégation de mathématiques</em>.</p>
   		
-  		<h3 class="page-perso"><a href="https://www-fourier.univ-grenoble-alpes.fr/~jeanbas/">Bastien Jean</a></h3>  		
+  		<a class="page-perso" href="https://www-fourier.univ-grenoble-alpes.fr/~jeanbas/">Bastien Jean</a>  		
   		
-  		<h3 class="page-perso"><a href="https://kineider.github.io">Clarence Kineider</a></h3>
+  		<a class="page-perso" href="https://kineider.github.io">Clarence Kineider</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/emilie.tezenas-du-montcel/">Emilie Tezenas du Montcel</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/emilie.tezenas-du-montcel/">Emilie Tezenas du Montcel</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/Francois.Ernoult/">François Ernoult</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/Francois.Ernoult/">François Ernoult</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/magali.jay/">Magali Jay</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/magali.jay/">Magali Jay</a>
   		
-  		<h3 class="page-perso"><a href="https://sites.google.com/view/marie-trin">Marie Trin</a></h3>
+  		<a class="page-perso" href="https://sites.google.com/view/marie-trin">Marie Trin</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/pierre.le-barbenchon/">Pierre le Barbenchon</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/pierre.le-barbenchon/">Pierre le Barbenchon</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/remi.moreau/">Rémi Moreau</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/remi.moreau/">Rémi Moreau</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/theo.untrau/">Théo Untrau</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/theo.untrau/">Théo Untrau</a>
   		
-  		<h3 class="page-perso"><a href="https://perso.eleves.ens-rennes.fr/people/Thomas.Cavallazzi/">Thomas Cavallazzi</a></h3>
+  		<a class="page-perso" href="https://perso.eleves.ens-rennes.fr/people/Thomas.Cavallazzi/">Thomas Cavallazzi</a>
   		
   		<hr>
 		
@@ -162,7 +164,9 @@
   		
   		<h2 align=center>Math jokes</h2>
 		
-		<p>Tanya Khovanova, <a href="https://arxiv.org/abs/2403.01010v1"><b>My Favorite Math Jokes</b></a>. (2024)</p>
+		<p>Bruno Winckler, <a href="https://mathem-all.fr/bw/humour.html">Humour mathématique</a>.</p>
+		
+		<p>Tanya Khovanova, <a href="https://arxiv.org/abs/2403.01010v1">My Favorite Math Jokes</a> (2024).</p>
 		
 		<hr>
 		

@@ -30,13 +30,17 @@
 		
 		<script>
 			function myFunction() {
-  			var x = document.getElementById("myNavbar");
-  			if (x.className === "navbar") {
-    			x.className += " responsive";
-  			} else {
-    			x.className = "navbar";
+    			var x = document.getElementById("myNavbar");
+    			var icon = x.querySelector(".icon i");
+
+    			if (x.className === "navbar") {
+      			x.className += " responsive";
+      			icon.className = "fa fa-times";
+    			} else {
+      			x.className = "navbar";
+      			icon.className = "fa fa-bars";
+    			}
   			}
-			}
 		</script>
 	</header>
 
@@ -54,16 +58,39 @@
 
 		<h2 align=center>Preprints</h2>
 		
-			<ul>
-				<li><p><a href="https://arxiv.org/abs/2402.12294"><b>Convex-cocompact representations into the isometry group of the infinite-dimensional hyperbolic space</b></a> (2026).</p></li>
-				<li><p><a href="https://arxiv.org/abs/2512.12369"><b>An explicit exotic representation of a rank-one simple Lie group via convex bodies</b></a>, with <a href="https://imag.umontpellier.fr/~fillastre/">François Fillastre</a> et <a href="https://perso.math.u-pem.fr/long.yusen/">Yusen Long</a> (2025).</p></li>
+			<ul class="articles-list">
+  				<li class="article">
+    				<div class="article-title">
+      				<a href="https://arxiv.org/abs/2402.12294">Convex-cocompact representations into the isometry group of the infinite-dimensional hyperbolic space</a>
+    				</div>
+    				<div class="article-meta">
+      				(2026)
+    				</div>
+  				</li>
+  				<li class="article">
+    				<div class="article-title">
+      				<a href="https://arxiv.org/abs/2512.12369">An explicit exotic representation of a rank-one simple Lie group via convex bodies</a>
+    				</div>
+    				<div class="article-meta">
+      				with <a href="https://imag.umontpellier.fr/~fillastre/">François Fillastre</a> and <a href="https://perso.math.u-pem.fr/long.yusen/">Yusen Long</a> (2025)
+    				</div>
+  				</li>
 			</ul>
 			
 		<hr>
 		
 		<h2 align=center>Ph.D. Thesis</h2>
 		
-			<p><a href="https://hal.univ-lorraine.fr/tel-04687768v1"><b>Discrete isometry groups of the infinite-dimensional hyperbolic space</b></a> (2024).</p>
+			<ul class="articles-list">
+				<li class="article">
+					<div class="article-title">
+						<a href="https://hal.univ-lorraine.fr/tel-04687768v1">Discrete isometry groups of the infinite-dimensional hyperbolic space</a>
+					</div>
+					<div class="article-meta">
+						(2024)
+					</div>
+				</li>
+			</ul>
 		
 		<hr>
 		

@@ -19,24 +19,28 @@
 		
 		<nav class="navbar" id="myNavbar">
 			<a class=active href="./index_en">Home</a>
-			<a href="./research">Research</a>
-			<a href="./teaching">Teaching</a>
-			<a href="./misc">Misc.</a>
-			<a href="./" class="langue fr"></a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    			<i class="fa fa-bars"></i>
-  			</a>
+      	<a href="./recherche">Recherche</a>
+      	<a href="./enseignement">Enseignement</a>
+      	<a href="./divers">Divers</a>    		
+    		<a href="./" class="langue fr"></a>
+    		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      		<i class="fa fa-bars"></i>
+    		</a>
 		</nav>
 		
 		<script>
 			function myFunction() {
-  			var x = document.getElementById("myNavbar");
-  			if (x.className === "navbar") {
-    			x.className += " responsive";
-  			} else {
-    			x.className = "navbar";
+    			var x = document.getElementById("myNavbar");
+    			var icon = x.querySelector(".icon i");
+
+    			if (x.className === "navbar") {
+      			x.className += " responsive";
+      			icon.className = "fa fa-times";
+    			} else {
+      			x.className = "navbar";
+      			icon.className = "fa fa-bars";
+    			}
   			}
-			}
 		</script>
 	</header>
 
@@ -58,10 +62,10 @@
     	
     	<ul>
     		<li><p>April 4 to 10, 2026 : I will be at the conference "Teichmüller theory and related topics" in Hefei, China.</p></li>
-    		<li><p>May 7, 2026 : I will be at the "Graduate Students Meeting" at KIAS in Séoul, South Korea.</p></li>   	
+    		<li><p>May 7, 2026 : I will be at the "Graduate Students Meeting" at KIAS in Seoul, South Korea.</p></li>   	
 			<li><p>Between May and June, 2026 : I will visit the Max Planck Institute in Leipzig, Germany.</p></li>
 			<li><p>June 1 to 3, 2026 : I will be at the "Workshop on infinite-dimensional geometry" that I co-organize in Leipzig, Germany.</p></li>
-			<li><p>June 8 to 12, 2026 : I will be at the 14th edition of YGGT at KIAS in Séoul, South Korea.</p></li>
+			<li><p>June 8 to 12, 2026 : I will be at the 14th edition of YGGT at KIAS in Seoul, South Korea.</p></li>
 			<li><p>June 28 to July 2, 2026 : I will participate in the conference "Theoretical and computational algebra" at University of Minho, in Guimarães, Portugal. I will give a mini-course at the thematic session on hyperbolic geometry and 3-manifold groups.</p></li>
 			<li><p>July 27 to 31, 2026 : I will be at the 3rd conference of 2K-GATE "Groups, dynamics and surfaces" on Jeju island, South Korea.</p></li>
 			<li><p>September 15 to 16, 2026 : I will be at the 100th birthday conference of Jean-Pierre Serre at IHP, France.</p></li>
@@ -96,7 +100,7 @@
          <br>
 
          <div align=center>
-         	&mdash; Last updated: April 6, 2026 &mdash;
+         	&mdash; Last updated: April 10, 2026 &mdash;
          </div>
   	
   	</div>

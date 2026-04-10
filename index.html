@@ -32,13 +32,17 @@
 		
 		<script>
 			function myFunction() {
-  			var x = document.getElementById("myNavbar");
-  			if (x.className === "navbar") {
-    			x.className += " responsive";
-  			} else {
-    			x.className = "navbar";
+    			var x = document.getElementById("myNavbar");
+    			var icon = x.querySelector(".icon i");
+
+    			if (x.className === "navbar") {
+      			x.className += " responsive";
+      			icon.className = "fa fa-times";
+    			} else {
+      			x.className = "navbar";
+      			icon.className = "fa fa-bars";
+    			}
   			}
-			}
 		</script>
 	</header>
 
@@ -59,7 +63,7 @@
     	<h2 align=center>Où je serai</h2>
     	
     	<ul>
-    		<li><p>Le 4 au 10 avril 2026 : Je serai à la conférence "Teichmüller theory and related topics" à Hefei, en Chine.</p></li>
+    		<li><p>Du 4 au 10 avril 2026 : Je serai à la conférence "Teichmüller theory and related topics" à Hefei, en Chine.</p></li>
     		<li><p>Le 7 mai 2026 : Je serai à la "Graduate Students Meeting" du KIAS à Séoul, en Corée du Sud</p></li>   	
 			<li><p>Entre mai et juin 2026 : Je serai en visite au Max Planck Institute de Leipzig en Allemagne.</p></li>
 			<li><p>Du 1er au 3 juin 2026 : Je serai au "Workshop on infinite-dimensional geometry" que je co-organise à Leipzig en Allemagne.</p></li>
@@ -98,7 +102,7 @@
          <br>
 
          <div align=center>
-         	&mdash; Dernière mise à jour : 6 avril 2026 &mdash;
+         	&mdash; Dernière mise à jour : 10 avril 2026 &mdash;
          </div>
   	
   	</div>
